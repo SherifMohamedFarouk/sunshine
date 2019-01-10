@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Location"
+    android:textSize="20sp"
+    android:id="@+id/Location"
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        android:textSize="15sp"
+        android:id="@+id/Locationmap"
+        app:layout_constraintTop_toBottomOf="@id/Location"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@id/Locationmap"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Temperature Uints"
+        android:textSize="20sp"
+        android:id="@+id/uints"
+        app:layout_constraintTop_toBottomOf="@id/Locationmap"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        android:textSize="15sp"
+        android:id="@+id/uintss"
+        app:layout_constraintTop_toBottomOf="@id/uints"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@id/uintss"
+        />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Notfications"
+        app:layout_constraintTop_toBottomOf="@id/uintss"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="20sp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weather Notifications"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/uintss"
+        android:id="@+id/Weather1"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enabled"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@id/Weather1"
+        android:id="@+id/En"
+        />
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

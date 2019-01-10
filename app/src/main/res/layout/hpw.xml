@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="20sp"
+    android:background="@color/colorPrimary"
+    >
+
+    <TextView
+        android:id="@+id/hu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Humidity  :"
+        android:textSize="30sp"
+
+
+
+        />
+
+    <TextView
+        android:id="@+id/hun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        tools:text="96%"
+        android:textSize="30sp"
+        android:layout_margin="32sp"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/hu" />
+    <TextView
+        android:id="@+id/pre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pressure  :"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@id/hu"
+        android:layout_margin="32sp"
+
+
+        />
+
+    <TextView
+        android:id="@+id/pren"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        tools:text="96%"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/pren"
+        app:layout_constraintTop_toBottomOf="@id/hun"
+        android:layout_margin="32sp"
+        />
+    <TextView
+        android:id="@+id/Wind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WInd  :"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@id/pre"
+        android:layout_margin="32sp"
+
+
+        />
+
+    <TextView
+        android:id="@+id/Windn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        tools:text="96%"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/Wind"
+        app:layout_constraintTop_toBottomOf="@id/pren"
+        android:layout_margin="32sp"
+        />
+
+</android.support.constraint.ConstraintLayout>
